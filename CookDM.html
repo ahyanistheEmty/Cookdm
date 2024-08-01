@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summary Tool</title>
+    <link rel="stylesheet" href="CookDM.css">
+</head>
+<body>
+    <button id="menu-btn">☰ Menu</button>
+
+    <nav id="menu-list">
+        <a href="ai.html">AI Summary</a>
+        <a href="https://ahyanistheemty.github.io/Yodm-home/Yodm_home.html">Home</a>
+        <a href="https://ahyanistheemty.github.io/Yodm/Yodm.html">YoDM</a>
+        <a href="https://ahyanistheemty.github.io/Summarydm/Summarydm/Summarydm.html">SummaryDM</a>
+        <a href="https://ahyanistheemty.github.io/Spelldm/Spelldm.html">SpellDM</a>
+    </nav>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="text-container">
+                <textarea id="text-input" placeholder="Enter your text here or drop a file"></textarea>
+            </div>
+            <input type="file" id="file-input" style="display: none;">
+            <button id="browse-button">Browse Files</button>
+        </div>
+
+        <div class="sidebar">
+            <h3>Modes</h3>
+            <div id="tone-options">
+                <button class="tone-button" data-tone="Give me the needed materials and instructions for the given dish">Recipe Cracker</button>
+                <button class="tone-button" data-tone="Find me what I can cook/make with these materials with the instructions">Recipe Maker</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="summary-popup" class="popup">
+        <div id="popup-content" class="popup-content">
+            <span class="close">&times;</span>
+            <div id="summary-output" class="summary-output"></div>
+        </div>
+    </div>
+
+    <script src="CookDM.js"></script>
+</body>
+</html>
